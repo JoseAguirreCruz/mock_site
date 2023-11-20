@@ -236,46 +236,90 @@ nav {
     }
 }
 
+.hamburger-menu {
+    display: block;
+    /* cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0; */
+
+}
 
 
 
+
+/* Responsive styles */
+/* Small screens (tablets) */
 @media (max-width: 768px) {
-    .nav-links li {
-        display: block;
+    nav {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         text-align: center;
-        margin: 10px 0;
+        width: 100%;
     }
 
-    .nav-links a {
+    .logo-container {
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    .hamburger-menu {
         display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     .title-icon-container h1 {
-        font-size: 1.2em; 
+        font-size: 1.2em;
     }
 
     .title-icon {
         height: 20px;
     }
 
-    .image-section h2, .image-section p {
-        font-size: 1.6em; 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjusted top to account for larger navbar */
+        left: 0;
+        background-color: #ffffff;
     }
 
-    .image-section p {
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0; /* Increased margin for more space between items */
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 15px 20px; /* Increased padding for larger clickable area */
+    }
+
+    .image-section h2, .image-section p {
+        font-size: 1.6em;
         width: 90%;
     }
 }
 
+/* Very small screens (phones) */
 @media (max-width: 480px) {
-    .nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .logo-container {
-        justify-content: center;
-        padding: 10px 0;
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     .title-icon-container h1 {
@@ -288,9 +332,49 @@ nav {
 
     .image-section h2, .image-section p {
         font-size: 1.4em;
+        width: 100%;
+    }
+}
+
+/* Medium screens (between tablet and desktop) */
+@media (min-width: 769px) and (max-width: 1366px) {
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
-    .image-section p {
-        width: 100%;
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        top: 50px;
+        width: 80%;
+        border-radius: 0 0 25px 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        display: block;
+        text-align: center;
+        margin: 15px 0; /* Maintain the spacing for medium screens as well */
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px 20px; /* Consistent padding for medium screens */
+    }
+
+    nav:hover .nav-links {
+        display: block;
     }
 }
