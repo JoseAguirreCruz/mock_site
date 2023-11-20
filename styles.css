@@ -287,7 +287,7 @@ nav {
         align-items: center;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjusted top to account for larger navbar */
+        top: 60px; 
         left: 0;
         background-color: rgba(255, 255, 255, 0.5);
         z-index: 1;
@@ -296,13 +296,13 @@ nav {
     .nav-links li {
         width: 100%;
         text-align: center;
-        margin: 15px 0; /* Increased margin for more space between items */
+        margin: 15px 0; 
     }
 
     .nav-links a {
         display: block;
         width: 100%;
-        padding: 15px 20px; /* Increased padding for larger clickable area */
+        padding: 15px 20px; 
     }
 
     .image-section h2, .image-section p {
@@ -335,7 +335,7 @@ nav {
         align-items: center;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjusted top to account for larger navbar */
+        top: 60px; 
         left: 0;
         background-color: rgba(255, 255, 255, 0.5);
         z-index: 1;
@@ -385,7 +385,7 @@ nav {
         align-items: center;
         width: 100%;
         position: absolute;
-        top: 50px; /* Adjusted top to account for larger navbar */
+        top: 50px;
         left: 0;
         background-color: rgba(255, 255, 255, 0.5);
         z-index: 1;
@@ -394,12 +394,12 @@ nav {
     .nav-links li {
         display: block;
         text-align: center;
-        margin: 15px 0; /* Maintain the spacing for medium screens as well */
+        margin: 15px 0; 
     }
 
     .nav-links a {
         display: block;
-        padding: 15px 20px; /* Consistent padding for medium screens */
+        padding: 15px 20px;
     }
 
     nav:hover .nav-links {
