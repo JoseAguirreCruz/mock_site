@@ -237,11 +237,7 @@ nav {
 }
 
 .hamburger-menu {
-    display: block;
-    /* cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0; */
+    display: none;
 
 }
 
