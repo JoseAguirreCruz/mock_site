@@ -83,7 +83,7 @@ nav {
     margin: 0;
 }
 
-.image-section img {
+.image-section video {
     width: 100%;
     height: 80vh;
     object-fit: cover;
@@ -129,6 +129,7 @@ nav {
 .image-section p:nth-child(4) {
     top: 50%;
 }
+
 
 .card-container {
     display: flex;
